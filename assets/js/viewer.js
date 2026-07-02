@@ -95,11 +95,11 @@ async function init() {
       const activeBoDe = boDeList.find(b => b.id === activeDoc.boDe);
 
       breadcrumb.innerHTML = `
-        <a href="index.html" class="breadcrumb-item">Trang chủ</a>
+        <a href="/" class="breadcrumb-item">Trang chủ</a>
         <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
-        <a href="index.html?mon=${activeDoc.mon}" class="breadcrumb-item">${activeSubject?.name || "Môn học"}</a>
+        <a href="/?mon=${activeDoc.mon}" class="breadcrumb-item">${activeSubject?.name || "Môn học"}</a>
         <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
-        <a href="list-de.html?mon=${activeDoc.mon}&bo-de=${activeDoc.boDe}" class="breadcrumb-item">${activeBoDe?.name || "Bộ đề"}</a>
+        <a href="list-de?mon=${activeDoc.mon}&bo-de=${activeDoc.boDe}" class="breadcrumb-item">${activeBoDe?.name || "Bộ đề"}</a>
         <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
         <span class="breadcrumb-item active text-truncate" style="max-width: 200px;">${activeDoc.title}</span>
       `;
@@ -119,14 +119,14 @@ async function init() {
       btnNewTab.href = pdfUrl;
 
       breadcrumb.innerHTML = `
-        <a href="index.html" class="breadcrumb-item">Trang chủ</a>
+        <a href="/" class="breadcrumb-item">Trang chủ</a>
         <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
         <span class="breadcrumb-item active">Xem nhanh PDF</span>
       `;
       lucide.createIcons();
 
       btnBackDashboard.addEventListener("click", () => {
-        window.location.href = "index.html";
+        window.location.href = "/";
       });
     }
 
@@ -512,7 +512,7 @@ function showError(title, message) {
   document.getElementById("error-desc-text").textContent = message;
 
   breadcrumb.innerHTML = `
-    <a href="index.html" class="breadcrumb-item">Trang chủ</a>
+    <a href="/" class="breadcrumb-item">Trang chủ</a>
     <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
     <span class="breadcrumb-item active">Lỗi</span>
   `;
