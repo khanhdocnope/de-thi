@@ -1,13 +1,26 @@
 # toggle-urls.ps1
 # Script PowerShell chuyển đổi liên kết giữa Local (.html) và Production (URL sạch theo .htaccess)
-# Đảm bảo giữ nguyên bảng mã UTF-8 tiếng Việt khi chạy
+# Đảm bảo giữ nguyên bảng mã UTF-8 tiếng Việt khi chạy và dùng đường dẫn tương đối
 
 param (
     [string]$Mode = "toggle" # Lựa chọn: local, prod, toggle
 )
 
-# Tìm tất cả các file HTML và JS
-$files = Get-ChildItem -Path . -Recurse -Include *.html, *.js -Exclude "toggle-urls.ps1"
+# Xác định thư mục chứa kịch bản để hoạt động theo đường dẫn tương đối
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+if ([string]::IsNullOrEmpty($scriptDir)) {
+    $scriptDir = $PSScriptRoot
+}
+if ([string]::IsNullOrEmpty($scriptDir)) {
+    $scriptDir = "."
+}
+
+# Đồng bộ thư mục làm việc của PowerShell và hệ thống .NET về thư mục chứa kịch bản
+Set-Location -Path $scriptDir
+[System.IO.Directory]::SetCurrentDirectory($scriptDir)
+
+# Tìm tất cả các file HTML và JS bằng đường dẫn tương đối
+$files = Get-ChildItem -Path "." -Recurse -Include *.html, *.js -Exclude "toggle-urls.ps1"
 
 # Danh sách các cặp thay thế
 $replacements = @(
@@ -47,7 +60,7 @@ $replacements = @(
     @{ Local = 'href=`viewer.html?'; Prod = 'href=`viewer?' }
 )
 
-# Tự động phát hiện chế độ hiện tại dựa trên index.html với encoding UTF8
+# Tự động phát hiện chế độ hiện tại dựa trên index.html với đường dẫn tương đối
 $currentMode = "prod"
 if (Test-Path "index.html") {
     $indexContent = Get-Content "index.html" -Raw -Encoding UTF8
@@ -76,8 +89,11 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 foreach ($file in $files) {
     if ($file.PSIsContainer) { continue }
     
-    # Đọc file với encoding UTF-8
-    $content = Get-Content $file.FullName -Raw -Encoding UTF8
+    # Lấy đường dẫn tương đối của tệp tin
+    $relPath = Resolve-Path $file.FullName -Relative
+    
+    # Đọc file bằng đường dẫn tương đối
+    $content = Get-Content $relPath -Raw -Encoding UTF8
     $originalContent = $content
     $modified = $false
     
@@ -97,10 +113,9 @@ foreach ($file in $files) {
         }
     }
     
-    # Chỉ ghi đè khi nội dung thực sự thay đổi
+    # Chỉ ghi đè khi nội dung thực sự thay đổi bằng đường dẫn tương đối
     if ($modified -and ($content -ne $originalContent)) {
-        [System.IO.File]::WriteAllText($file.FullName, $content, $utf8NoBom)
-        $relPath = Resolve-Path $file.FullName -Relative
+        [System.IO.File]::WriteAllText($relPath, $content, $utf8NoBom)
         Write-Host "  Da cap nhat: $relPath" -ForegroundColor Green
         $updatedCount++
     }
