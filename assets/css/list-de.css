@@ -19,7 +19,7 @@
 .list-hero-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-primary);
 }
 
 .list-hero-desc {
@@ -85,19 +85,19 @@
 .filter-group select {
   width: 100%;
   padding: 10px 14px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.04);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  color: white;
+  color: var(--text-primary);
   font-size: 0.85rem;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-[data-theme="light"] .filter-group select {
-  background: white;
-  color: var(--text-primary);
+[data-theme="dark"] .filter-group select {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .filter-group select:focus {
@@ -331,17 +331,13 @@
 .card-title {
   font-size: 0.9rem;
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   line-height: 1.4;
   height: 2.8em;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-[data-theme="light"] .card-title {
-  color: var(--text-primary);
 }
 
 .card-school-info {

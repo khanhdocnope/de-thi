@@ -29,23 +29,23 @@
 }
 
 [data-theme="light"] {
-    --bg-dark: #F3F4F6;
-    --bg-panel: rgba(255, 255, 255, 0.75);
-    --bg-card: rgba(255, 255, 255, 0.6);
+    --bg-dark: #F8FAFC;
+    --bg-panel: rgba(255, 255, 255, 0.85);
+    --bg-card: rgba(255, 255, 255, 0.7);
     --bg-card-hover: rgba(255, 255, 255, 0.95);
-    --border-color: rgba(0, 0, 0, 0.08);
+    --border-color: rgba(15, 23, 42, 0.06);
     
-    --primary: #CA8A04;
-    --primary-light: #EAB308;
-    --primary-glow: rgba(202, 138, 4, 0.1);
-    --secondary: #0891B2;
-    --success: #DB2777;
+    --primary: #0284C7;
+    --primary-light: #0EA5E9;
+    --primary-glow: rgba(2, 132, 199, 0.08);
+    --secondary: #0F766E;
+    --success: #059669;
     --info: #2563EB;
     
-    --text-primary: #1F2937;
-    --text-secondary: #4B5563;
-    --text-muted: #9CA3AF;
-    --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
 }
 
 body {
@@ -501,7 +501,7 @@ body {
 .subject-hero-title {
     font-size: 1.75rem;
     font-weight: 800;
-    color: white;
+    color: var(--text-primary);
 }
 
 .subject-hero-desc {
@@ -555,13 +555,17 @@ body {
 .search-box input {
     width: 100%;
     padding: 10px 16px 10px 42px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.04);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    color: white;
+    color: var(--text-primary);
     font-size: 0.85rem;
     outline: none;
     transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .search-box input {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .search-box input:focus {
@@ -644,7 +648,7 @@ body {
 .bode-card-title {
     font-size: 1.15rem;
     font-weight: 700;
-    color: white;
+    color: var(--text-primary);
 }
 
 .bode-card-desc {
