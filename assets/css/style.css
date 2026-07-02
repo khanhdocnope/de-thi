@@ -267,7 +267,7 @@ body {
 
 .hero-banner {
     display: block;
-    border-radius: 16px;
+    border-radius: 12px;
     object-fit: cover;
     border: 1px solid var(--border-color);
 }
