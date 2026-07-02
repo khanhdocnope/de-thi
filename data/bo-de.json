@@ -1,0 +1,82 @@
+[
+  {
+    "id": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "name": "Chuyên đề: Đơn Điệu & Cực Trị",
+    "grade": "12",
+    "description": "Tài liệu lý thuyết, bài giảng và bài tập chuyên đề về tính đơn điệu (đồng biến, nghịch biến) và cực trị của hàm số.",
+    "totalDeThi": 9
+  },
+  {
+    "id": "tiem-can",
+    "mon": "toan",
+    "name": "Chuyên đề: Đường Tiệm Cận",
+    "grade": "12",
+    "description": "Chuyên đề đường tiệm cận đứng, tiệm cận ngang và tiệm cận xiên của đồ thị hàm số.",
+    "totalDeThi": 6
+  },
+  {
+    "id": "gtln-gtnn",
+    "mon": "toan",
+    "name": "Chuyên đề: Giá Trị Lớn Nhất & Nhỏ Nhất",
+    "grade": "12",
+    "description": "Chuyên đề tìm GTLN và GTNN của hàm số trên một khoảng, một đoạn và ứng dụng toán tối ưu.",
+    "totalDeThi": 6
+  },
+  {
+    "id": "khao-sat-do-thi",
+    "mon": "toan",
+    "name": "Chuyên đề: Khảo Sát & Vẽ Đồ Thị",
+    "grade": "12",
+    "description": "Hướng dẫn các bước khảo sát sự biến thiên và vẽ đồ thị các hàm số đa thức bậc ba, phân thức bậc nhất.",
+    "totalDeThi": 25
+  },
+  {
+    "id": "toan-thuc-te",
+    "mon": "toan",
+    "name": "Chuyên đề: Ứng Dụng Toán Thực Tế",
+    "grade": "12",
+    "description": "Bộ câu hỏi và đề thi ứng dụng đạo hàm và khảo sát hàm số vào các bài toán thực tế sinh động.",
+    "totalDeThi": 6
+  },
+  {
+    "id": "tong-on-de-thi",
+    "mon": "toan",
+    "name": "Chuyên đề: Đề Kiểm Tra & Tổng Ôn",
+    "grade": "12",
+    "description": "Tổng hợp bộ đề ôn tập chương, đề kiểm tra định kỳ chuyên đề Ứng dụng đạo hàm và Khảo sát hàm số.",
+    "totalDeThi": 5
+  },
+  {
+    "id": "dao-dong-co",
+    "mon": "ly",
+    "name": "Chuyên đề: Dao Động Cơ",
+    "grade": "12",
+    "description": "Các dạng bài tập về dao động điều hòa, con lắc lò xo, con lắc đơn và dao động tắt dần.",
+    "totalDeThi": 3
+  },
+  {
+    "id": "song-co",
+    "mon": "ly",
+    "name": "Chuyên đề: Sóng Cơ & Sóng Âm",
+    "grade": "12",
+    "description": "Lý thuyết sóng cơ, sự truyền sóng, giao thoa sóng và các đặc trưng sinh lý của âm.",
+    "totalDeThi": 3
+  },
+  {
+    "id": "este-lipit",
+    "mon": "hoa",
+    "name": "Chuyên đề: Este - Lipit",
+    "grade": "12",
+    "description": "Phản ứng thủy phân este, xà phòng hóa chất béo và bài tập hiệu suất phản ứng.",
+    "totalDeThi": 3
+  },
+  {
+    "id": "kim-loai",
+    "mon": "hoa",
+    "name": "Chuyên đề: Đại Cương Kim Loại",
+    "grade": "12",
+    "description": "Tính chất vật lý, hóa học của kim loại, dãy điện hóa và phương pháp điều chế kim loại.",
+    "totalDeThi": 3
+  }
+]

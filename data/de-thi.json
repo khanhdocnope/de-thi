@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "don-dieu-cuc-tri-1",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Tính đơn điệu của hàm số - Toán 12 (Cánh Diều)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cánh Diều",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-2",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Tính đơn điệu và cực trị của hàm số - Toán 12 (Chân Trời Sáng Tạo)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo",
+      "Cực trị",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-ctst.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-ctst.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-3",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Tính đơn điệu và cực trị của hàm số - Toán 12 (Kết Nối Tri Thức)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức",
+      "Cực trị",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-knttvcs.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-knttvcs.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-4",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Chuyên đề: Cực trị của hàm số - Toán 12 định hướng Cấu trúc mới",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cực trị"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-cuc-tri-cua-ham-so-mon-toan-12-dinh-huong-cau-truc-moi.PDF",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-cuc-tri-cua-ham-so-mon-toan-12-dinh-huong-cau-truc-moi.PDF",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-5",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Chuyên đề: Tính đơn điệu của hàm số - Toán 12 định hướng Cấu trúc mới",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-tinh-don-dieu-cua-ham-so-mon-toan-12-dinh-huong-cau-truc-moi.PDF",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-tinh-don-dieu-cua-ham-so-mon-toan-12-dinh-huong-cau-truc-moi.PDF",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-6",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Chuyên đề Tính đơn điệu và cực trị của hàm số (Từ cơ bản đến nâng cao)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cực trị",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-7",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Ôn kiến thức luyện kỹ năng - Bài giảng Cực trị của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cực trị"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-cuc-tri-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-cuc-tri-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-8",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Ôn kiến thức luyện kỹ năng - Bài giảng Tính đơn điệu của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-tinh-don-dieu-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-tinh-don-dieu-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "don-dieu-cuc-tri-9",
+    "boDe": "don-dieu-cuc-tri",
+    "mon": "toan",
+    "title": "Trắc nghiệm và tự luận - Chủ đề Tính đơn điệu và cực trị của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cực trị",
+      "Tính đơn điệu"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-tinh-don-dieu-va-cuc-tri-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-tinh-don-dieu-va-cuc-tri-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-1",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Đường tiệm cận của đồ thị hàm số - Toán 12 (Cánh Diều)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cánh Diều",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-2",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Đường tiệm cận của đồ thị hàm số - Toán 12 (Chân Trời Sáng Tạo)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-ctst.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-ctst.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-3",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Đường tiệm cận của đồ thị hàm số - Toán 12 (Kết Nối Tri Thức)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-knttvcs.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-knttvcs.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-4",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Chuyên đề Đường tiệm cận của đồ thị hàm số (Từ cơ bản đến nâng cao)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-5",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Ôn kiến thức luyện kỹ năng - Bài giảng Đường tiệm cận của đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-duong-tiem-can-cua-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-duong-tiem-can-cua-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tiem-can-6",
+    "boDe": "tiem-can",
+    "mon": "toan",
+    "title": "Trắc nghiệm và tự luận - Chủ đề Đường tiệm cận của đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Đường tiệm cận"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-duong-tiem-can-cua-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-duong-tiem-can-cua-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-1",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Giá trị lớn nhất và Giá trị nhỏ nhất của hàm số - Toán 12 (Chân Trời Sáng Tạo)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-gia-tri-nho-nhat-cua-ham-so-toan-12-ctst.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-gia-tri-nho-nhat-cua-ham-so-toan-12-ctst.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-2",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Giá trị lớn nhất và Giá trị nhỏ nhất của hàm số - Toán 12 (Cánh Diều)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cánh Diều"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-3",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Giá trị lớn nhất và Giá trị nhỏ nhất của hàm số - Toán 12 (Kết Nối Tri Thức)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-toan-12-knttvcs.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-toan-12-knttvcs.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-4",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Chuyên đề Giá trị lớn nhất và Giá trị nhỏ nhất của hàm số (Từ cơ bản đến nâng cao)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-5",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Ôn kiến thức luyện kỹ năng - Bài giảng GTLN/GTNN của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "GTLN/GTNN"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-gtln-gtnn-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-gtln-gtnn-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "gtln-gtnn-6",
+    "boDe": "gtln-gtnn",
+    "mon": "toan",
+    "title": "Trắc nghiệm và tự luận - Chủ đề Giá trị lớn nhất và Giá trị nhỏ nhất của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-1",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Bài giảng: Ứng dụng đạo hàm để khảo sát hàm số - Toán 12 (Chân Trời Sáng Tạo)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-2",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Bài giảng: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số - Toán 12 (Cánh Diều)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cánh Diều"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-3",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Bài giảng: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12 (Kết Nối Tri Thức)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-4",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Bài tập: Ứng dụng đạo hàm để khảo sát hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-tap-ung-dung-dao-ham-de-khao-sat-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-tap-ung-dung-dao-ham-de-khao-sat-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-5",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Bài tập: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12 Chương trình mới",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-chuong-trinh-moi.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-chuong-trinh-moi.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-6",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Khảo sát sự biến thiên và vẽ đồ thị của hàm số - Toán 12 (Cánh Diều)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Cánh Diều",
+      "Biến thiên"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-su-bien-thien-va-ve-do-thi-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-su-bien-thien-va-ve-do-thi-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-7",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Khảo sát sự biến thiên và vẽ đồ thị của hàm số - Toán 12 (Kết Nối Tri Thức)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức",
+      "Biến thiên"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-su-bien-thien-va-ve-do-thi-cua-ham-so-toan-12-knttvcs.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-su-bien-thien-va-ve-do-thi-cua-ham-so-toan-12-knttvcs.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-8",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Khảo sát và vẽ đồ thị một số hàm số cơ bản - Toán 12 (Chân Trời Sáng Tạo)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-9",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Các dạng bài tập: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số Thầy Trần Bá Sào",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-tran-ba-sao.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-tran-ba-sao.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-10",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Chuyên đề Khảo sát sự biến thiên và vẽ đồ thị hàm số (Từ cơ bản đến nâng cao)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Biến thiên"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-11",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Chuyên đề: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số - Toán 12",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-12",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Chuyên đề: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số Thầy Diệp Tuân",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-diep-tuan.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-diep-tuan.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-13",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Chuyên đề: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12 Chương trình mới",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-chuong-trinh-moi.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-chuong-trinh-moi.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-14",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Luyện kỹ năng trắc nghiệm đúng sai tổng hợp - Chủ đề Khảo sát hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/luyen-ky-nang-trac-nghiem-dung-sai-tong-hop-chu-de-khao-sat-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/luyen-ky-nang-trac-nghiem-dung-sai-tong-hop-chu-de-khao-sat-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-15",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Nắm trọn chuyên đề Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/nam-tron-chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/nam-tron-chuyen-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-16",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Ôn kiến thức luyện kỹ năng - Bài giảng Đồ thị bảng biến thiên của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Biến thiên"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-do-thi-bang-bien-thien-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/on-kien-thuc-luyen-ky-nang-bai-giang-do-thi-bang-bien-thien-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-17",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Tài liệu: học tập Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số - Toán 12",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-hoc-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-hoc-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-toan-12.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-18",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Tài liệu: học tập Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-hoc-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-hoc-tap-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-19",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Tài liệu: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số Cấu trúc mới",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-cau-truc-moi.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-cua-ham-so-cau-truc-moi.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-20",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Tài liệu: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số Thầy Lê Văn Đoàn",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-le-van-doan.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tai-lieu-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-le-van-doan.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-21",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Toàn tập khảo sát hàm số và ứng dụng - Môn Toán 12 THPT",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-tap-khao-sat-ham-so-va-ung-dung-mon-toan-12-thpt.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-tap-khao-sat-ham-so-va-ung-dung-mon-toan-12-thpt.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-22",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Trắc nghiệm và tự luận - Chủ đề Khảo sát sự biến thiên và vẽ đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Biến thiên"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/trac-nghiem-va-tu-luan-chu-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-23",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Ứng dụng đạo hàm để khảo sát hàm số - Toán 12 (Chân Trời Sáng Tạo) Thầy Nguyễn Vũ Minh",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst-nguyen-vu-minh.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst-nguyen-vu-minh.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-24",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Ứng dụng đạo hàm để khảo sát hàm số - Toán 12 (Chân Trời Sáng Tạo) Cô Trần Thanh Yến",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Chân Trời Sáng Tạo"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst-tran-thanh-yen.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst-tran-thanh-yen.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "khao-sat-do-thi-25",
+    "boDe": "khao-sat-do-thi",
+    "mon": "toan",
+    "title": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12 (Kết Nối Tri Thức) Thầy Lê Quang Xe",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Kết Nối Tri Thức"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs-le-quang-xe.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs-le-quang-xe.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-1",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Bài toán: thực tế về hàm số Môn Toán 12 Thầy Võ Công Trường",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-toan-thuc-te-ve-ham-so-mon-toan-12-vo-cong-truong.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bai-toan-thuc-te-ve-ham-so-mon-toan-12-vo-cong-truong.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-2",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Luyện kỹ năng ứng dụng hàm số giải bài toán thực tế",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/luyen-ky-nang-ung-dung-ham-so-giai-bai-toan-thuc-te.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/luyen-ky-nang-ung-dung-ham-so-giai-bai-toan-thuc-te.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-3",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Một số bài toán thực tế liên quan đến khảo sát hàm số - Toán 12 (Phần 1)",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/mot-so-bai-toan-thuc-te-lien-quan-den-khao-sat-ham-so-toan-12-phan-1.PDF",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/mot-so-bai-toan-thuc-te-lien-quan-den-khao-sat-ham-so-toan-12-phan-1.PDF",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-4",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Toán thực tế - Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số - Toán 12",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-thuc-te-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-thuc-te-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-5",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Toán thực tế - Ứng dụng đạo hàm và khảo sát hàm số Thầy Đặng Việt Đông",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-thuc-te-ung-dung-dao-ham-va-khao-sat-ham-so-dang-viet-dong.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/toan-thuc-te-ung-dung-dao-ham-va-khao-sat-ham-so-dang-viet-dong.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "toan-thuc-te-6",
+    "boDe": "toan-thuc-te",
+    "mon": "toan",
+    "title": "Tổng hợp toán thực tế đúng sai và trả lời ngắn - Chủ đề GTLN/GTNN của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12",
+      "GTLN/GTNN",
+      "Toán thực tế"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tong-hop-toan-thuc-te-dung-sai-va-tra-loi-ngan-chu-de-gtln-gtnn-cua-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/tong-hop-toan-thuc-te-dung-sai-va-tra-loi-ngan-chu-de-gtln-gtnn-cua-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tong-on-de-thi-1",
+    "boDe": "tong-on-de-thi",
+    "mon": "toan",
+    "title": "30 Đề tổng ôn tập chương Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/30-de-tong-on-tap-chuong-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/30-de-tong-on-tap-chuong-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tong-on-de-thi-2",
+    "boDe": "tong-on-de-thi",
+    "mon": "toan",
+    "title": "Bộ đề ôn tập chương Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bo-de-on-tap-chuong-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bo-de-on-tap-chuong-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tong-on-de-thi-3",
+    "boDe": "tong-on-de-thi",
+    "mon": "toan",
+    "title": "Bộ đề ôn tập môn Toán 12 - Chủ đề khảo sát và vẽ đồ thị của hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bo-de-on-tap-mon-toan-12-chu-de-khao-sat-va-ve-do-thi-cua-ham-so.PDF",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/bo-de-on-tap-mon-toan-12-chu-de-khao-sat-va-ve-do-thi-cua-ham-so.PDF",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tong-on-de-thi-4",
+    "boDe": "tong-on-de-thi",
+    "mon": "toan",
+    "title": "Đề kiểm tra theo bài học - Chủ đề Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/de-kiem-tra-theo-bai-hoc-chu-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/de-kiem-tra-theo-bai-hoc-chu-de-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "tong-on-de-thi-5",
+    "boDe": "tong-on-de-thi",
+    "mon": "toan",
+    "title": "Đề kiểm tra theo bài học - Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "year": 2026,
+    "school": "Sở GD&ĐT / THPT Chuyên",
+    "tags": [
+      "Toán 12"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/de-kiem-tra-theo-bai-hoc-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/de-kiem-tra-theo-bai-hoc-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "dao-dong-co-1",
+    "boDe": "dao-dong-co",
+    "mon": "ly",
+    "title": "Đề khảo sát chuyên đề: Dao động điều hòa và Con lắc lò xo",
+    "year": 2026,
+    "school": "THPT Chuyên Hà Nội - Amsterdam",
+    "tags": [
+      "Vật lý 12",
+      "Dao động cơ",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "dao-dong-co-2",
+    "boDe": "dao-dong-co",
+    "mon": "ly",
+    "title": "Chuyên đề lý thuyết + bài tập tổng hợp Con lắc đơn & Dao động tắt dần",
+    "year": 2025,
+    "school": "Sở GD&ĐT Nam Định",
+    "tags": [
+      "Vật lý 12",
+      "Dao động cơ"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "dao-dong-co-3",
+    "boDe": "dao-dong-co",
+    "mon": "ly",
+    "title": "Đề ôn tập giữa học kỳ 1: Chương 1 Dao động cơ học - Đề số 3",
+    "year": 2026,
+    "school": "THPT Chuyên Lam Sơn",
+    "tags": [
+      "Vật lý 12",
+      "Dao động cơ",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "song-co-1",
+    "boDe": "song-co",
+    "mon": "ly",
+    "title": "Đề luyện thi chuyên đề: Sóng cơ và Sự truyền sóng cơ học",
+    "year": 2026,
+    "school": "Sở GD&ĐT Thanh Hóa",
+    "tags": [
+      "Vật lý 12",
+      "Sóng cơ",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "song-co-2",
+    "boDe": "song-co",
+    "mon": "ly",
+    "title": "Chuyên đề nâng cao: Giao thoa sóng cơ và Sóng dừng trên dây",
+    "year": 2025,
+    "school": "THPT Chuyên Phan Bội Châu",
+    "tags": [
+      "Vật lý 12",
+      "Sóng cơ"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "song-co-3",
+    "boDe": "song-co",
+    "mon": "ly",
+    "title": "Tài liệu lý thuyết và bài tập trắc nghiệm đặc trưng vật lý của Sóng âm",
+    "year": 2026,
+    "school": "Sở GD&ĐT Nghệ An",
+    "tags": [
+      "Vật lý 12",
+      "Sóng cơ",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "este-lipit-1",
+    "boDe": "este-lipit",
+    "mon": "hoa",
+    "title": "Đề ôn tập chương 1: Este và Lipit - Đề số 1",
+    "year": 2026,
+    "school": "THPT Chuyên Lê Hồng Phong",
+    "tags": [
+      "Hóa học 12",
+      "Este-Lipit",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "este-lipit-2",
+    "boDe": "este-lipit",
+    "mon": "hoa",
+    "title": "Chuyên đề phản ứng xà phòng hóa chất béo và hiệu suất phản ứng thủy phân",
+    "year": 2026,
+    "school": "Sở GD&ĐT Bắc Ninh",
+    "tags": [
+      "Hóa học 12",
+      "Este-Lipit"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "este-lipit-3",
+    "boDe": "este-lipit",
+    "mon": "hoa",
+    "title": "Tổng ôn trắc nghiệm lý thuyết Este - Lipit nâng cao (Định hướng mới)",
+    "year": 2025,
+    "school": "THPT Chuyên Trần Phú",
+    "tags": [
+      "Hóa học 12",
+      "Este-Lipit",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "kim-loai-1",
+    "boDe": "kim-loai",
+    "mon": "hoa",
+    "title": "Đề khảo sát chuyên đề: Tính chất hóa học chung của Kim loại",
+    "year": 2026,
+    "school": "Sở GD&ĐT Hải Phòng",
+    "tags": [
+      "Hóa học 12",
+      "Kim loại",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "kim-loai-2",
+    "boDe": "kim-loai",
+    "mon": "hoa",
+    "title": "Chuyên đề lý thuyết Dãy điện hóa của kim loại và Pin điện hóa",
+    "year": 2026,
+    "school": "THPT Chuyên Quốc Học Huế",
+    "tags": [
+      "Hóa học 12",
+      "Kim loại"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": false,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  },
+  {
+    "id": "kim-loai-3",
+    "boDe": "kim-loai",
+    "mon": "hoa",
+    "title": "Bài tập tính toán: Ăn mòn kim loại và Phương pháp điều chế kim loại",
+    "year": 2026,
+    "school": "Sở GD&ĐT Vĩnh Phúc",
+    "tags": [
+      "Hóa học 12",
+      "Kim loại",
+      "có đáp án"
+    ],
+    "pdfUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "hasAnswerKey": true,
+    "answerKeyUrl": "https://huggingface.co/datasets/khanh098643466/math-12-AI-slove/resolve/main/cac-dang-bai-tap-tinh-don-dieu-cua-ham-so-toan-12-canh-dieu.pdf",
+    "uploadedAt": "2026-07-02"
+  }
+]

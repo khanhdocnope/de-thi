@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Danh Sách Đề Thi & Chuyên Đề</title>
+    
+    <meta name="description" content="Danh sách các đề thi, chuyên đề ôn tập chi tiết kèm đáp án tải về.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/list-de.css">
+</head>
+<body>
+    <div class="bg-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <div class="app-layout">
+        <!-- Main Top Bar -->
+        <header class="app-header">
+            <div class="header-container">
+                <a href="index.html" class="logo-area">
+                    <div class="logo-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <span class="logo-text">EduHub Bank</span>
+                </a>
+                
+                <nav class="breadcrumb-nav" id="breadcrumb">
+                    <!-- Rendered by list-de.js -->
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Chuyển chế độ sáng/tối">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <!-- 1. DETAILED EXAMS LIST GRID -->
+            <section id="exams-list-view" class="view-section">
+                <!-- Header Details -->
+                <div class="list-hero">
+                    <div class="list-hero-info">
+                        <h1 class="list-hero-title" id="bo-de-title">Tên Bộ Đề Đang Xem</h1>
+                        <p class="list-hero-desc" id="bo-de-desc">Mô tả chi tiết về bộ đề thi, cấu trúc và định hướng thi học tập.</p>
+                    </div>
+                    <div class="list-hero-count">
+                        <div class="stat-badge">
+                            <span class="stat-number" id="exams-count">0</span>
+                            <span class="stat-label">Đề thi sẵn sàng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workspace-layout">
+                    <!-- Sidebar: Filters -->
+                    <aside class="filter-sidebar">
+                        <div class="sidebar-box">
+                            <h3 class="box-title"><i data-lucide="filter"></i> Bộ lọc nâng cao</h3>
+                            
+                            <!-- Search in list -->
+                            <div class="filter-group">
+                                <label for="exam-search">Tìm tên đề</label>
+                                <div class="search-box">
+                                    <input type="text" id="exam-search" placeholder="Nhập tên đề thi...">
+                                    <i data-lucide="search"></i>
+                                </div>
+                            </div>
+
+                            <!-- Year filter -->
+                            <div class="filter-group">
+                                <label for="filter-year">Năm học</label>
+                                <select id="filter-year">
+                                    <option value="All">Tất cả các năm</option>
+                                    <option value="2026">Năm 2026</option>
+                                    <option value="2025">Năm 2025</option>
+                                    <option value="2024">Năm 2024</option>
+                                </select>
+                            </div>
+
+                            <!-- School/Publisher filter -->
+                            <div class="filter-group">
+                                <label for="filter-school">Nhà xuất bản / Trường</label>
+                                <select id="filter-school">
+                                    <option value="All">Tất cả</option>
+                                    <option value="Cánh Diều">Sách Cánh Diều</option>
+                                    <option value="Chân Trời Sáng Tạo">Sách Chân Trời Sáng Tạo</option>
+                                    <option value="Kết Nối Tri Thức">Sách Kết Nối Tri Thức</option>
+                                    <option value="Chương trình mới">Chương trình mới</option>
+                                </select>
+                            </div>
+
+                            <!-- Has answer key checkbox -->
+                            <div class="filter-group check-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="filter-answers">
+                                    <span class="checkmark"></span>
+                                    Chỉ hiển thị đề có đáp án
+                                </label>
+                            </div>
+
+                            <button class="btn-secondary w-full" id="btn-reset-filters">
+                                <i data-lucide="rotate-ccw"></i> Xóa tất cả lọc
+                            </button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Grid -->
+                    <div class="exams-grid-wrapper">
+                        <div class="exams-grid" id="exams-container">
+                            <!-- Populated by list-de.js -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ERROR / NOT FOUND VIEW -->
+            <section id="error-view" class="view-section error-container" style="display: none;">
+                <div class="error-card">
+                    <div class="error-icon">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <h2 class="error-title" id="error-title-text">Không Tìm Thấy Bộ Đề</h2>
+                    <p class="error-desc" id="error-desc-text">Thông tin bộ đề thi bạn đang truy cập không hợp lệ hoặc không trùng khớp với môn học.</p>
+                    <a href="index.html" class="btn-primary">
+                        <i data-lucide="arrow-left"></i> Quay lại trang chủ
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="footer-container">
+                <p>© 2026 EduHub Bank • Phát triển trên nền tảng HTML5 tĩnh tối ưu luồng stream</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script type="module" src="assets/js/list-de.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "toan",
+    "name": "Môn Toán Lớp 12",
+    "icon": "line-chart",
+    "description": "Ngân hàng đề thi thử, chuyên đề khảo sát hàm số, hình học Oxyz chương trình mới."
+  },
+  {
+    "slug": "ly",
+    "name": "Môn Vật Lý Lớp 12",
+    "icon": "activity",
+    "description": "Chuyên đề dao động cơ, sóng cơ, dòng điện xoay chiều và các dạng đề kiểm tra định kỳ."
+  },
+  {
+    "slug": "hoa",
+    "name": "Môn Hóa Học Lớp 12",
+    "icon": "flask",
+    "description": "Tài liệu học tập este-lipit, kim loại, chuỗi phản ứng hóa hữu cơ và vô cơ."
+  }
+]

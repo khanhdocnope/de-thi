@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Ngân Hàng Đề Thi & Tài Liệu Học Tập</title>
+    
+    <meta name="description" content="Hệ thống lưu trữ, phân loại đề thi thử THPT Quốc Gia, tài liệu học tập lớp 12.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="bg-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <div class="app-layout">
+        <!-- Main Top Bar -->
+        <header class="app-header">
+            <div class="header-container">
+                <a href="index.html" class="logo-area">
+                    <div class="logo-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <span class="logo-text">EduHub Bank</span>
+                </a>
+                
+                <nav class="breadcrumb-nav" id="breadcrumb" style="display: none;">
+                    <!-- Rendered by app.js -->
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Chuyển chế độ sáng/tối">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <!-- 1. MODE A: SUBJECTS LIST VIEW -->
+            <section id="subject-list-view" class="view-section" style="display: none;">
+                <div class="hero-block">
+                    <h1 class="hero-title">Ngân Hàng Đề Thi & Học Tập</h1>
+                    <p class="hero-subtitle">Hệ thống tổng hợp, phân loại tài liệu chuyên đề và đề thi lớp 12 theo chương trình mới.</p>
+                    
+                    <div class="global-stats-row">
+                        <div class="stat-badge">
+                            <span class="stat-number" id="subject-total-docs">57</span>
+                            <span class="stat-label">Tài liệu trực tuyến</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Lĩnh vực chính</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Tải xuống miễn phí</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <h2 class="section-title">Chọn môn học để bắt đầu</h2>
+                    <div class="subjects-grid" id="subjects-container">
+                        <!-- Dynamic subjects list -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. MODE B: BỘ ĐỀ LIST VIEW -->
+            <section id="bode-list-view" class="view-section" style="display: none;">
+                <div class="subject-hero">
+                    <div class="subject-hero-details">
+                        <div class="subject-icon-large" id="bode-subject-icon">
+                            <i data-lucide="book"></i>
+                        </div>
+                        <div>
+                            <h1 class="subject-hero-title" id="bode-subject-title">Môn Toán Học</h1>
+                            <p class="subject-hero-desc" id="bode-subject-desc">Hệ thống tài liệu luyện thi toán 12</p>
+                        </div>
+                    </div>
+                    <div class="subject-hero-stats">
+                        <div class="hero-stat-badge">
+                            <i data-lucide="files"></i>
+                            <span id="bode-subject-count">0</span> Bộ đề lớn
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="dashboard-controls">
+                        <h2 class="section-title">Danh sách các chuyên đề & bộ đề</h2>
+                        <div class="search-box">
+                            <input type="text" id="bode-search" placeholder="Tìm bộ đề, chuyên đề...">
+                            <i data-lucide="search"></i>
+                        </div>
+                    </div>
+
+                    <div class="bode-grid" id="bode-container">
+                        <!-- Dynamic sub-topics list -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. ERROR / NOT FOUND VIEW -->
+            <section id="error-view" class="view-section error-container" style="display: none;">
+                <div class="error-card">
+                    <div class="error-icon">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <h2 class="error-title" id="error-title-text">Không Tìm Thấy Môn Học</h2>
+                    <p class="error-desc" id="error-desc-text">Môn học bạn đang truy cập không tồn tại hoặc đã bị gỡ bỏ khỏi hệ thống.</p>
+                    <a href="index.html" class="btn-primary">
+                        <i data-lucide="arrow-left"></i> Quay lại trang chủ
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="footer-container">
+                <p>© 2026 EduHub Bank • Phát triển trên nền tảng HTML5 tĩnh tối ưu luồng stream</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

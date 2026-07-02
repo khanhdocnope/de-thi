@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Trình Đọc PDF Trực Tuyến</title>
+    
+    <meta name="description" content="Trình xem tài liệu PDF học tập chất lượng cao lớp 12.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/viewer.css">
+</head>
+<body>
+    <div class="bg-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <div class="app-layout">
+        <!-- Main Top Bar -->
+        <header class="app-header">
+            <div class="header-container">
+                <a href="index.html" class="logo-area">
+                    <div class="logo-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <span class="logo-text">EduHub Bank</span>
+                </a>
+                
+                <nav class="breadcrumb-nav" id="breadcrumb">
+                    <!-- Rendered by viewer.js -->
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Chuyển chế độ sáng/tối">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main viewer-main">
+            <!-- Details top banner -->
+            <div class="viewer-top-banner">
+                <div class="doc-info-block">
+                    <button class="btn-back-link" id="btn-back-dashboard" title="Quay về danh sách đề">
+                        <i data-lucide="arrow-left"></i>
+                        <span>Danh sách</span>
+                    </button>
+                    <div class="doc-header-titles">
+                        <h1 class="doc-main-title" id="doc-title">Tên Đề Thi Đang Đọc</h1>
+                        <p class="doc-sub-meta" id="doc-meta">Môn Toán • Định dạng PDF</p>
+                    </div>
+                </div>
+
+                <div class="banner-actions">
+                    <button class="action-btn" id="btn-copy-link" title="Sao chép đường dẫn tải file">
+                        <i data-lucide="copy"></i>
+                        <span>Sao chép link</span>
+                    </button>
+                    <a href="#" target="_blank" class="action-btn" id="btn-new-tab" title="Mở PDF trong tab mới">
+                        <i data-lucide="external-link"></i>
+                        <span>Mở tab mới</span>
+                    </a>
+                    <a href="#" download class="action-btn btn-primary" id="btn-download" title="Tải xuống PDF">
+                        <i data-lucide="download"></i>
+                        <span>Tải về</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PDF Viewer container -->
+            <div class="viewer-workspace">
+                <!-- Loader -->
+                <div class="viewer-loader-overlay" id="loader-overlay">
+                    <div class="spinner"></div>
+                    <div class="loader-text" id="loader-status">Đang stream tệp tin nhị phân PDF...</div>
+                </div>
+
+                <!-- Custom Canvas Rendering Area -->
+                <div class="pdf-render-area" id="pdf-render-area" style="display: none;">
+                </div>
+
+                <!-- Iframe Fallback Area -->
+                <iframe class="pdf-iframe" id="pdf-iframe-fallback" src="" title="PDF Reader Fallback" style="display: none;"></iframe>
+
+                <!-- Floating Toolbar -->
+                <div class="viewer-floating-toolbar" id="floating-toolbar" style="display: none;">
+                    <button class="tool-btn" id="btn-prev" title="Trang trước">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="page-indicator">
+                        Trang <input type="number" id="page-num-input" min="1" value="1"> / <span id="page-count">0</span>
+                    </div>
+                    <button class="tool-btn" id="btn-next" title="Trang sau">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                    <div class="tool-divider"></div>
+                    <button class="tool-btn" id="btn-zoom-out" title="Thu nhỏ">
+                        <i data-lucide="zoom-out"></i>
+                    </button>
+                    <span class="zoom-level" id="zoom-percent">100%</span>
+                    <button class="tool-btn" id="btn-zoom-in" title="Phóng to">
+                        <i data-lucide="zoom-in"></i>
+                    </button>
+                    <button class="tool-btn" id="btn-fit-width" title="Xem vừa khít chiều ngang">
+                        <i data-lucide="maximize-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Error container inside workspace -->
+            <section id="error-view" class="view-section error-container" style="display: none;">
+                <div class="error-card">
+                    <div class="error-icon">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <h2 class="error-title" id="error-title-text">Lỗi Nạp Đề Thi</h2>
+                    <p class="error-desc" id="error-desc-text">Không thể đọc tham số định danh đề thi hoặc tệp tin không tồn tại trên hệ thống.</p>
+                    <a href="index.html" class="btn-primary">
+                        <i data-lucide="arrow-left"></i> Quay lại trang chủ
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script type="module" src="assets/js/viewer.js"></script>
+</body>
+</html>
