@@ -265,6 +265,31 @@ body {
     gap: 16px;
 }
 
+.hero-banner {
+    display: block;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+/* PC Style */
+@media (min-width: 769px) {
+    .hero-banner {
+        width: 100%;
+        max-width: 480px;
+        height: 160px;
+    }
+}
+
+/* Mobile Style */
+@media (max-width: 768px) {
+    .hero-banner {
+        width: 100px;
+        height: 100px;
+        aspect-ratio: 1/1;
+    }
+}
+
 .hero-title {
     font-size: 3rem;
     font-weight: 800;
