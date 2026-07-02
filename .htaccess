@@ -1,0 +1,21 @@
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Redirect index.php và index.html về /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(index\.(php|html))\ HTTP/
+RewriteRule ^index\.(php|html)$ / [R=301,L]
+
+# Redirect /page.html sang /page để giữ URL sạch
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+
+# Ưu tiên .php nếu tồn tại
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Nếu không có .php thì dùng .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
