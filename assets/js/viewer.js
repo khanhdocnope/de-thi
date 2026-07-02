@@ -107,7 +107,7 @@ async function init() {
 
       // Setup back button
       btnBackDashboard.addEventListener("click", () => {
-        window.location.href = `list-de.html?mon=${activeDoc.mon}&bo-de=${activeDoc.boDe}`;
+        window.location.href = `list-de?mon=${activeDoc.mon}&bo-de=${activeDoc.boDe}`;
       });
     } else {
       // Quick source mode

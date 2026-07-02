@@ -96,7 +96,7 @@ function showModeA() {
 
     if (subActive) {
       card.addEventListener("click", () => {
-        window.location.href = `index.html?mon=${sub.slug}`;
+        window.location.href = `./?mon=${sub.slug}`;
       });
     }
 
@@ -185,7 +185,7 @@ function renderBodeGrid() {
     `;
 
     card.addEventListener("click", () => {
-      window.location.href = `list-de.html?mon=${activeMonSlug}&bo-de=${b.id}`;
+      window.location.href = `list-de?mon=${activeMonSlug}&bo-de=${b.id}`;
     });
 
     bodeContainer.appendChild(card);

@@ -32,6 +32,7 @@ $replacements = @(
     @{ Local = 'href="index.html?'; Prod = 'href="./?' },
     @{ Local = '"index.html?'; Prod = '"./?' },
     @{ Local = "'index.html?"; Prod = "'./?" },
+    @{ Local = '`index.html?'; Prod = '`./?' },
     
     # list-de.html <=> list-de
     @{ Local = 'href="list-de.html"'; Prod = 'href="list-de"' },
@@ -45,6 +46,7 @@ $replacements = @(
     @{ Local = 'window.location.href = "list-de.html?'; Prod = 'window.location.href = "list-de?' },
     @{ Local = "window.location.href = 'list-de.html?"; Prod = "window.location.href = 'list-de?" },
     @{ Local = 'href=`list-de.html?'; Prod = 'href=`list-de?' },
+    @{ Local = '`list-de.html?'; Prod = '`list-de?' },
     
     # viewer.html <=> viewer
     @{ Local = 'href="viewer.html"'; Prod = 'href="viewer"' },
@@ -57,7 +59,22 @@ $replacements = @(
     @{ Local = "'viewer.html?"; Prod = "'viewer?" },
     @{ Local = 'window.location.href = "viewer.html?'; Prod = 'window.location.href = "viewer?' },
     @{ Local = "window.location.href = 'viewer.html?"; Prod = "window.location.href = 'viewer?" },
-    @{ Local = 'href=`viewer.html?'; Prod = 'href=`viewer?' }
+    @{ Local = 'href=`viewer.html?'; Prod = 'href=`viewer?' },
+    @{ Local = '`viewer.html?'; Prod = '`viewer?' },
+
+    # game-lat-the.html <=> game-lat-the
+    @{ Local = 'href="game-lat-the.html"'; Prod = 'href="game-lat-the"' },
+    @{ Local = "href='game-lat-the.html'"; Prod = "href='game-lat-the'" },
+    @{ Local = '"game-lat-the.html"'; Prod = '"game-lat-the"' },
+    @{ Local = "'game-lat-the.html'"; Prod = "'game-lat-the'" },
+    @{ Local = '`game-lat-the.html`'; Prod = '`game-lat-the`' },
+
+    # game-sudoku.html <=> game-sudoku
+    @{ Local = 'href="game-sudoku.html"'; Prod = 'href="game-sudoku"' },
+    @{ Local = "href='game-sudoku.html'"; Prod = "href='game-sudoku'" },
+    @{ Local = '"game-sudoku.html"'; Prod = '"game-sudoku"' },
+    @{ Local = "'game-sudoku.html'"; Prod = "'game-sudoku'" },
+    @{ Local = '`game-sudoku.html`'; Prod = '`game-sudoku`' }
 )
 
 # Tự động phát hiện chế độ hiện tại dựa trên index.html với đường dẫn tương đối

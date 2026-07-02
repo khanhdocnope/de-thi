@@ -234,7 +234,7 @@ function renderExams() {
 
     // View button click
     card.querySelector(".view-btn").addEventListener("click", () => {
-      window.location.href = `viewer.html?id=${doc.id}`;
+      window.location.href = `viewer?id=${doc.id}`;
     });
 
     // Lazy load canvas
