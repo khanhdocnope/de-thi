@@ -192,6 +192,15 @@ async function startPdfStream(url) {
       offset += chunk.length;
     }
 
+    // Force real download using local same-origin Blob URL
+    try {
+      const blob = new Blob([binaryData], { type: "application/pdf" });
+      const blobUrl = URL.createObjectURL(blob);
+      btnDownload.href = blobUrl;
+    } catch (blobErr) {
+      console.warn("Failed to create local blob URL:", blobErr);
+    }
+
     // Load into PDF.js
     const loadingTask = pdfjsLib.getDocument({ data: binaryData });
     currentPdfDoc = await loadingTask.promise;
