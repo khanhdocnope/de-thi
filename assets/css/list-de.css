@@ -3,12 +3,11 @@
 .list-hero {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 24px;
-  padding: 32px;
+  border-radius: 16px;
+  padding: 24px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(15px);
   margin-bottom: 24px;
 }
 
@@ -46,9 +45,8 @@
 .sidebar-box {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 24px;
-  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -186,18 +184,17 @@
 .exam-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(10px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .exam-card:hover {
   background: var(--bg-card-hover);
-  transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
   box-shadow: var(--card-shadow);
 }
 

@@ -10,9 +10,9 @@
 /* Light / Dark Variables */
 :root {
     --bg-dark: #070913;
-    --bg-panel: rgba(13, 17, 33, 0.7);
-    --bg-card: rgba(26, 33, 56, 0.4);
-    --bg-card-hover: rgba(36, 47, 80, 0.7);
+    --bg-panel: #0d1121;
+    --bg-card: #12182d;
+    --bg-card-hover: #19203c;
     --border-color: rgba(255, 255, 255, 0.08);
     
     --primary: #F59E0B;
@@ -25,15 +25,15 @@
     --text-primary: #F3F4F6;
     --text-secondary: #9CA3AF;
     --text-muted: #6B7280;
-    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --card-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="light"] {
     --bg-dark: #F8FAFC;
-    --bg-panel: rgba(255, 255, 255, 0.85);
-    --bg-card: rgba(255, 255, 255, 0.7);
-    --bg-card-hover: rgba(255, 255, 255, 0.95);
-    --border-color: rgba(15, 23, 42, 0.06);
+    --bg-panel: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --border-color: rgba(15, 23, 42, 0.08);
     
     --primary: #0284C7;
     --primary-light: #0EA5E9;
@@ -45,7 +45,7 @@
     --text-primary: #0F172A;
     --text-secondary: #334155;
     --text-muted: #64748B;
-    --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+    --card-shadow: 0 4px 15px -3px rgba(15, 23, 42, 0.08), 0 2px 6px -2px rgba(15, 23, 42, 0.04);
 }
 
 body {
@@ -137,8 +137,6 @@ body {
     height: 72px;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-panel);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -293,11 +291,10 @@ body {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     padding: 16px 28px;
-    border-radius: 16px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(10px);
 }
 
 .stat-number {
@@ -337,40 +334,22 @@ body {
 .subject-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 28px;
+    border-radius: 12px;
+    padding: 24px;
     display: flex;
     gap: 20px;
     align-items: flex-start;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
 }
 
-.subject-card::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5px;
-    background: linear-gradient(to bottom, var(--primary), var(--secondary));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
 .subject-card:hover {
     background: var(--bg-card-hover);
-    transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.12);
     box-shadow: var(--card-shadow);
-}
-
-.subject-card:hover::before {
-    opacity: 1;
 }
 
 .subject-card.coming-soon {
@@ -467,12 +446,11 @@ body {
 .subject-hero {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 24px;
-    padding: 32px;
+    border-radius: 16px;
+    padding: 24px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(15px);
     margin-bottom: 24px;
 }
 
@@ -599,20 +577,19 @@ body {
 .bode-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 14px;
     cursor: pointer;
-    backdrop-filter: blur(10px);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bode-card:hover {
     background: var(--bg-card-hover);
-    transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.12);
     box-shadow: var(--card-shadow);
 }
 
@@ -694,7 +671,7 @@ body {
 .error-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 40px;
     max-width: 480px;
     width: 100%;
@@ -703,7 +680,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    backdrop-filter: blur(15px);
 }
 
 .error-icon {
