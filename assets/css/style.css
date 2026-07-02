@@ -15,11 +15,11 @@
     --bg-card-hover: rgba(36, 47, 80, 0.7);
     --border-color: rgba(255, 255, 255, 0.08);
     
-    --primary: #6366F1;
-    --primary-light: #818CF8;
-    --primary-glow: rgba(99, 102, 241, 0.15);
-    --secondary: #A855F7;
-    --success: #10B981;
+    --primary: #F59E0B;
+    --primary-light: #FBBF24;
+    --primary-glow: rgba(245, 158, 11, 0.15);
+    --secondary: #06B6D4;
+    --success: #EC4899;
     --info: #3B82F6;
     
     --text-primary: #F3F4F6;
@@ -35,11 +35,11 @@
     --bg-card-hover: rgba(255, 255, 255, 0.95);
     --border-color: rgba(0, 0, 0, 0.08);
     
-    --primary: #4F46E5;
-    --primary-light: #6366F1;
-    --primary-glow: rgba(79, 70, 229, 0.1);
-    --secondary: #9333EA;
-    --success: #059669;
+    --primary: #CA8A04;
+    --primary-light: #EAB308;
+    --primary-glow: rgba(202, 138, 4, 0.1);
+    --secondary: #0891B2;
+    --success: #DB2777;
     --info: #2563EB;
     
     --text-primary: #1F2937;
@@ -162,21 +162,13 @@ body {
     color: var(--text-primary);
 }
 
-.logo-icon {
+.logo-img {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    object-fit: cover;
     box-shadow: 0 4px 14px var(--primary-glow);
-}
-
-.logo-icon i {
-    width: 22px;
-    height: 22px;
+    border: 1px solid var(--border-color);
 }
 
 .logo-text {
