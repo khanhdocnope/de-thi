@@ -24,14 +24,14 @@ $files = Get-ChildItem -Path "." -Recurse -Include *.html, *.js -Exclude "toggle
 
 # Danh sách các cặp thay thế
 $replacements = @(
-    # index.html <=> /
-    @{ Local = 'href="index.html"'; Prod = 'href="/"' },
-    @{ Local = "href='index.html'"; Prod = "href='/'" },
-    @{ Local = '"index.html"'; Prod = '"/"' },
-    @{ Local = "'index.html'"; Prod = "'/'" },
-    @{ Local = 'href="index.html?'; Prod = 'href="/?' },
-    @{ Local = '"index.html?'; Prod = '"/?' },
-    @{ Local = "'index.html?"; Prod = "'/?" },
+    # index.html <=> ./
+    @{ Local = 'href="index.html"'; Prod = 'href="./"' },
+    @{ Local = "href='index.html'"; Prod = "href='./'" },
+    @{ Local = '"index.html"'; Prod = '"./"' },
+    @{ Local = "'index.html'"; Prod = "'./'" },
+    @{ Local = 'href="index.html?'; Prod = 'href="./?' },
+    @{ Local = '"index.html?'; Prod = '"./?' },
+    @{ Local = "'index.html?"; Prod = "'./?" },
     
     # list-de.html <=> list-de
     @{ Local = 'href="list-de.html"'; Prod = 'href="list-de"' },

@@ -71,9 +71,9 @@ async function init() {
 
     // Setup Breadcrumb
     breadcrumb.innerHTML = `
-      <a href="/" class="breadcrumb-item">Trang chủ</a>
+      <a href="index.html" class="breadcrumb-item">Trang chủ</a>
       <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
-      <a href="/?mon=${activeMonSlug}" class="breadcrumb-item">${activeSubject.name}</a>
+      <a href="index.html?mon=${activeMonSlug}" class="breadcrumb-item">${activeSubject.name}</a>
       <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
       <span class="breadcrumb-item active">${activeBoDe.name}</span>
     `;
