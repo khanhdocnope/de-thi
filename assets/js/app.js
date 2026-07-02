@@ -113,7 +113,7 @@ function showModeB() {
   const currentSub = subjects.find(s => s.slug === activeMonSlug);
   breadcrumb.style.display = "flex";
   breadcrumb.innerHTML = `
-    <a href="index.html" class="breadcrumb-item">Trang chủ</a>
+    <a href="./" class="breadcrumb-item">Trang chủ</a>
     <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
     <span class="breadcrumb-item active">${currentSub.name}</span>
   `;
