@@ -270,23 +270,22 @@ body {
     border-radius: 12px;
     object-fit: cover;
     border: 1px solid var(--border-color);
+    aspect-ratio: 1/1;
 }
 
 /* PC Style */
 @media (min-width: 769px) {
     .hero-banner {
-        width: 100%;
-        max-width: 480px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
     }
 }
 
 /* Mobile Style */
 @media (max-width: 768px) {
     .hero-banner {
-        width: 100px;
-        height: 100px;
-        aspect-ratio: 1/1;
+        width: 90px;
+        height: 90px;
     }
 }
 
