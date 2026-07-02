@@ -89,3 +89,12 @@ Nếu các liên kết PDF bị chặn bởi cơ chế bảo mật **CORS** củ
 - `useCorsProxy: true`: Cho phép nạp PDF qua proxy trung gian.
 - `corsProxyUrl`: Điểm cuối của proxy (Ví dụ: `https://api.allorigins.win/raw?url=`).
 - `autoConvertGoogleDriveLink: true`: Tự động chuyển đổi link Drive chia sẻ thông thường sang link tải trực tiếp.
+
+## 4. Dễ dàng debug
+# Khi dùng Live Server (VS Code Extension)
+.\toggle-urls.ps1 -Mode local
+# Khi deploy lên Apache hosting
+.\toggle-urls.ps1 -Mode prod
+# Để chuyển đổi tự động (Toggle)
+.\toggle-urls.ps1
+
