@@ -187,6 +187,12 @@ body {
     color: var(--text-secondary);
 }
 
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        display: none;
+    }
+}
+
 .breadcrumb-item {
     color: var(--text-secondary);
     text-decoration: none;
