@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Học Thuật - EduHub Bank</title>
+    <!-- CSS and Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .game-container-layout {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .sudoku-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 12px;
+        }
+
+        .difficulty-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .difficulty-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .sudoku-grid {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            border: 2px solid var(--text-primary);
+            background: var(--text-primary);
+            gap: 1px;
+            margin-bottom: 24px;
+            aspect-ratio: 1;
+        }
+
+        .sudoku-cell {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            user-select: none;
+            aspect-ratio: 1;
+        }
+
+        .sudoku-cell:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .sudoku-cell.selected {
+            background: rgba(245, 158, 11, 0.15) !important;
+            box-shadow: inset 0 0 0 2px var(--primary);
+        }
+
+        .sudoku-cell.original {
+            color: var(--text-muted);
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.02);
+            cursor: not-allowed;
+        }
+
+        [data-theme="light"] .sudoku-cell.original {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        .sudoku-cell.incorrect {
+            color: var(--success) !important; /* Note: success is Pink/Red in our dark theme */
+            background: rgba(236, 72, 153, 0.08) !important;
+        }
+
+        /* Group borders (3x3 grid) */
+        .sudoku-cell:nth-child(3n) {
+            border-right: 2px solid var(--text-primary);
+        }
+        .sudoku-cell:nth-child(9n) {
+            border-right: none;
+        }
+        .sudoku-grid > div:nth-child(n+19):nth-child(-n+27),
+        .sudoku-grid > div:nth-child(n+46):nth-child(-n+54) {
+            border-bottom: 2px solid var(--text-primary);
+        }
+
+        /* Number Pad Selection */
+        .number-pad {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .pad-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 12px 0;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .pad-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--primary);
+        }
+
+        .pad-btn.action-btn {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .win-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .win-overlay.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .win-content {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 440px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: var(--card-shadow);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-container">
+                <a href="./" class="logo-area">
+                    <img src="https://i.ibb.co/Y4crHd7B/icon-edu-Hub.jpg" alt="EduHub Logo" class="logo-img">
+                    <span class="logo-text">EduHub Bank</span>
+                </a>
+                
+                <nav class="breadcrumb-nav">
+                    <a href="./" class="breadcrumb-item">Trang chủ</a>
+                    <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+                    <span class="breadcrumb-item active">Sudoku Logic</span>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Chuyển chế độ sáng/tối">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="game-container-layout">
+            <div class="subject-hero">
+                <div class="subject-hero-details">
+                    <div class="utility-icon" style="width:50px; height:50px; border-radius:12px;">
+                        <i data-lucide="hash"></i>
+                    </div>
+                    <div>
+                        <h1 class="subject-hero-title">Sudoku Logic</h1>
+                        <p class="subject-hero-desc">Thử thách trí não, rèn luyện tư duy phản xạ toán học và logic số học!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls & Levels -->
+            <div class="sudoku-controls">
+                <div style="display:flex; gap:8px;">
+                    <button class="difficulty-btn active" data-level="easy">Dễ</button>
+                    <button class="difficulty-btn" data-level="medium">Vừa</button>
+                    <button class="difficulty-btn" data-level="hard">Khó</button>
+                </div>
+                <button class="btn-primary" id="btn-new-game" style="padding: 8px 16px; font-size: 0.85rem;">
+                    <i data-lucide="rotate-cw" style="width:14px; height:14px;"></i> Trận mới
+                </button>
+            </div>
+
+            <!-- Board -->
+            <div class="sudoku-grid" id="sudoku-grid">
+                <!-- 9x9 cells will be generated here -->
+            </div>
+
+            <!-- Number Pad -->
+            <div class="number-pad">
+                <button class="pad-btn" data-num="1">1</button>
+                <button class="pad-btn" data-num="2">2</button>
+                <button class="pad-btn" data-num="3">3</button>
+                <button class="pad-btn" data-num="4">4</button>
+                <button class="pad-btn" data-num="5">5</button>
+                <button class="pad-btn" data-num="6">6</button>
+                <button class="pad-btn" data-num="7">7</button>
+                <button class="pad-btn" data-num="8">8</button>
+                <button class="pad-btn" data-num="9">9</button>
+                <button class="pad-btn action-btn" id="btn-erase" title="Xóa số"><i data-lucide="eraser" style="width:18px;"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Win Modal -->
+    <div class="win-overlay" id="win-overlay">
+        <div class="win-content">
+            <i data-lucide="smile" class="win-icon" style="width: 80px; height: 80px; color: var(--success);"></i>
+            <h2 class="section-title" style="font-size: 1.8rem; margin: 0;">Chúc mừng bạn!</h2>
+            <p class="quote-text" style="text-align: center;">Bạn đã hoàn thành bảng Sudoku một cách chính xác tuyệt đối.</p>
+            <button class="btn-primary" id="btn-win-restart" style="width: 100%; justify-content: center; padding: 12px;">
+                <i data-lucide="play"></i> Chơi tiếp
+            </button>
+        </div>
+    </div>
+
+    <!-- Sudoku Logic Script -->
+    <script>
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const currentTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        
+        themeToggleBtn.addEventListener("click", () => {
+            const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", nextTheme);
+            localStorage.setItem("theme", nextTheme);
+        });
+
+        // Simple Sudoku generator
+        let solution = [];
+        let puzzle = [];
+        let selectedCellIndex = null;
+        let activeDifficulty = "easy";
+
+        const gridEl = document.getElementById("sudoku-grid");
+        const winOverlay = document.getElementById("win-overlay");
+
+        // Base solved board seed
+        const baseBoard = [
+            [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            [4, 5, 6, 7, 8, 9, 1, 2, 3],
+            [7, 8, 9, 1, 2, 3, 4, 5, 6],
+            [2, 3, 1, 5, 6, 4, 8, 9, 7],
+            [5, 6, 4, 8, 9, 7, 2, 3, 1],
+            [8, 9, 7, 2, 3, 1, 5, 6, 4],
+            [3, 1, 2, 6, 4, 5, 9, 7, 8],
+            [6, 4, 5, 9, 7, 8, 3, 1, 2],
+            [9, 7, 8, 3, 1, 2, 6, 4, 5]
+        ];
+
+        function shuffleBoard() {
+            let board = JSON.parse(JSON.stringify(baseBoard));
+            // Swap numbers randomly (1-9 map to other 1-9)
+            const map = {};
+            const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            const shuffled = [...nums].sort(() => Math.random() - 0.5);
+            nums.forEach((n, i) => map[n] = shuffled[i]);
+
+            for (let r = 0; r < 9; r++) {
+                for (let c = 0; c < 9; c++) {
+                    board[r][c] = map[board[r][c]];
+                }
+            }
+            return board;
+        }
+
+        function generateSudoku() {
+            solution = shuffleBoard();
+            puzzle = JSON.parse(JSON.stringify(solution));
+
+            // Determine empty count based on difficulty
+            let holes = 35;
+            if (activeDifficulty === "medium") holes = 48;
+            if (activeDifficulty === "hard") holes = 58;
+
+            while (holes > 0) {
+                const r = Math.floor(Math.random() * 9);
+                const c = Math.floor(Math.random() * 9);
+                if (puzzle[r][c] !== 0) {
+                    puzzle[r][c] = 0;
+                    holes--;
+                }
+            }
+        }
+
+        function createBoard() {
+            gridEl.innerHTML = "";
+            selectedCellIndex = null;
+
+            for (let r = 0; r < 9; r++) {
+                for (let c = 0; c < 9; c++) {
+                    const idx = r * 9 + c;
+                    const val = puzzle[r][c];
+                    const cell = document.createElement("div");
+                    cell.className = "sudoku-cell";
+                    cell.dataset.index = idx;
+                    cell.dataset.row = r;
+                    cell.dataset.col = c;
+
+                    if (val !== 0) {
+                        cell.textContent = val;
+                        cell.classList.add("original");
+                    }
+
+                    cell.addEventListener("click", () => {
+                        if (cell.classList.contains("original")) return;
+                        
+                        document.querySelectorAll(".sudoku-cell").forEach(el => el.classList.remove("selected"));
+                        cell.classList.add("selected");
+                        selectedCellIndex = idx;
+                    });
+
+                    gridEl.appendChild(cell);
+                }
+            }
+        }
+
+        // Fill selected cell with number
+        function fillNumber(num) {
+            if (selectedCellIndex === null) return;
+            const cell = document.querySelector(`.sudoku-cell[data-index="${selectedCellIndex}"]`);
+            if (!cell || cell.classList.contains("original")) return;
+
+            const r = parseInt(cell.dataset.row);
+            const c = parseInt(cell.dataset.col);
+
+            if (num === 0) {
+                // Erase
+                puzzle[r][c] = 0;
+                cell.textContent = "";
+                cell.classList.remove("incorrect");
+            } else {
+                puzzle[r][c] = num;
+                cell.textContent = num;
+
+                // Validate correctness
+                if (solution[r][c] !== num) {
+                    cell.classList.add("incorrect");
+                } else {
+                    cell.classList.remove("incorrect");
+                }
+            }
+
+            checkWin();
+        }
+
+        function checkWin() {
+            // Check if board fully match solution
+            for (let r = 0; r < 9; r++) {
+                for (let c = 0; c < 9; c++) {
+                    if (puzzle[r][c] !== solution[r][c]) return;
+                }
+            }
+
+            setTimeout(() => {
+                winOverlay.classList.add("show");
+            }, 300);
+        }
+
+        // Keypad inputs
+        document.querySelectorAll(".pad-btn[data-num]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const num = parseInt(btn.dataset.num);
+                fillNumber(num);
+            });
+        });
+
+        document.getElementById("btn-erase").addEventListener("click", () => {
+            fillNumber(0);
+        });
+
+        // Difficulty controls
+        document.querySelectorAll(".difficulty-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".difficulty-btn").forEach(el => el.classList.remove("active"));
+                btn.classList.add("active");
+                activeDifficulty = btn.dataset.level;
+                startNewGame();
+            });
+        });
+
+        function startNewGame() {
+            winOverlay.classList.remove("show");
+            generateSudoku();
+            createBoard();
+        }
+
+        document.getElementById("btn-new-game").addEventListener("click", startNewGame);
+        document.getElementById("btn-win-restart").addEventListener("click", startNewGame);
+
+        // Init
+        startNewGame();
+        lucide.createIcons();
+    </script>
+</body>
+</html>
