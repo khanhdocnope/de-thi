@@ -363,3 +363,29 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: 600px) {
+  .banner-actions .action-btn span {
+    display: none;
+  }
+  .banner-actions .action-btn {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .viewer-floating-toolbar #btn-zoom-in,
+  .viewer-floating-toolbar #btn-zoom-out,
+  .viewer-floating-toolbar #btn-fit-width,
+  .viewer-floating-toolbar .zoom-level,
+  .viewer-floating-toolbar .tool-divider {
+    display: none !important;
+  }
+  
+  .viewer-floating-toolbar {
+    width: 95%;
+    padding: 6px 12px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
