@@ -391,6 +391,10 @@
                 }
             }
 
+            // Save to localStorage
+            const played = parseInt(localStorage.getItem("games_played_sudoku") || 0);
+            localStorage.setItem("games_played_sudoku", played + 1);
+
             setTimeout(() => {
                 winOverlay.classList.add("show");
             }, 300);

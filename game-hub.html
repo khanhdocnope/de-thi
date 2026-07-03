@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub Game Center - Góc Thư Giãn Trí Tuệ</title>
+    <!-- CSS and Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .hub-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .stats-dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .stats-dashboard {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+
+        .hub-stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .stat-icon-wrapper {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-light);
+        }
+
+        .stat-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .stat-value {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-top: 4px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width: 850px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .game-hub-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .game-hub-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px var(--primary-glow);
+        }
+
+        .game-badge {
+            align-self: flex-start;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .game-card-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .game-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .game-play-area {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Math challenge inline UI matching home page styles */
+        .game-play-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+        .game-question {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 16px 0;
+            color: var(--primary-light);
+        }
+        .game-options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            width: 100%;
+        }
+        .game-option-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+        }
+        .game-option-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-container">
+                <a href="./" class="logo-area">
+                    <img src="https://i.ibb.co/Y4crHd7B/icon-edu-Hub.jpg" alt="EduHub Logo" class="logo-img">
+                    <span class="logo-text">EduHub Bank</span>
+                </a>
+                
+                <nav class="breadcrumb-nav">
+                    <a href="./" class="breadcrumb-item">Trang chủ</a>
+                    <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+                    <span class="breadcrumb-item active">Góc giải trí trí tuệ</span>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle-btn" title="Chuyển chế độ sáng/tối">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hub Main Workspace -->
+        <main class="hub-container">
+            <div class="subject-hero">
+                <div class="subject-hero-details">
+                    <div class="utility-icon" style="width:50px; height:50px; border-radius:12px;">
+                        <i data-lucide="gamepad-2"></i>
+                    </div>
+                    <div>
+                        <h1 class="subject-hero-title">Đấu Trường Trí Tuệ</h1>
+                        <p class="subject-hero-desc">Tổng hợp các thử thách rèn luyện não bộ, giải tỏa stress sau những giờ ôn luyện căng thẳng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats dashboard -->
+            <div class="stats-dashboard">
+                <div class="hub-stat-card">
+                    <div class="stat-icon-wrapper"><i data-lucide="award"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-title">Kỷ lục Tính Nhanh</span>
+                        <span class="stat-value" id="stat-math">0 điểm</span>
+                    </div>
+                </div>
+                <div class="hub-stat-card">
+                    <div class="stat-icon-wrapper"><i data-lucide="timer"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-title">Lật Thẻ Nhanh Nhất</span>
+                        <span class="stat-value" id="stat-memory">Chưa có</span>
+                    </div>
+                </div>
+                <div class="hub-stat-card">
+                    <div class="stat-icon-wrapper"><i data-lucide="check-circle"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-title">Sudoku Hoàn Thành</span>
+                        <span class="stat-value" id="stat-sudoku">0 ván</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="games-grid">
+                <!-- Game 1: Quick Math Playable Directly -->
+                <div class="game-hub-card">
+                    <span class="game-badge">Chơi tại đây</span>
+                    <h2 class="game-card-title">Thử Thách Tính Nhanh</h2>
+                    <p class="game-card-desc">Tính toán nhanh các phép toán cơ bản trước khi hết giờ. Càng nhiều điểm thời gian suy nghĩ càng rút ngắn!</p>
+                    
+                    <div class="game-play-area" id="math-game-area">
+                        <p style="margin-bottom:16px; color:var(--text-secondary);">Rèn luyện phản xạ tính toán tức thì.</p>
+                        <button class="btn-primary" id="btn-start-math" style="padding:10px 24px;">Bắt đầu chơi</button>
+                    </div>
+                </div>
+
+                <!-- Link to other games -->
+                <div style="display:flex; flex-direction:column; gap:24px;">
+                    <!-- Game 2: Memory -->
+                    <div class="game-hub-card">
+                        <span class="game-badge">Chơi trang riêng</span>
+                        <h2 class="game-card-title">Lật Thẻ Học Thuật</h2>
+                        <p class="game-card-desc">Ghép cặp các công thức vật lý, ký hiệu toán học hoặc nguyên tố hóa học tương thích.</p>
+                        <a href="game-lat-the" class="btn-primary" style="margin-top:8px; text-decoration:none; justify-content:center;">
+                            Chơi Ngay <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Game 3: Sudoku -->
+                    <div class="game-hub-card">
+                        <span class="game-badge">Chơi trang riêng</span>
+                        <h2 class="game-card-title">Sudoku Logic</h2>
+                        <p class="game-card-desc">Điền các số 1-9 vào ô trống sao cho không bị trùng lặp trên hàng, cột và phân vùng 3x3.</p>
+                        <a href="game-sudoku" class="btn-primary" style="margin-top:8px; text-decoration:none; justify-content:center;">
+                            Chơi Ngay <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Hub Logic JS -->
+    <script>
+        // Theme switcher
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const currentTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        
+        themeToggleBtn.addEventListener("click", () => {
+            const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", nextTheme);
+            localStorage.setItem("theme", nextTheme);
+        });
+
+        // Load stats from localStorage
+        function loadStats() {
+            // Math high score
+            const mathHighScore = localStorage.getItem("high_score_quick_math") || 0;
+            document.getElementById("stat-math").textContent = `${mathHighScore} điểm`;
+
+            // Memory match best time
+            const memoryBestTime = localStorage.getItem("best_time_memory_game");
+            if (memoryBestTime) {
+                document.getElementById("stat-memory").textContent = `${memoryBestTime} giây`;
+            } else {
+                document.getElementById("stat-memory").textContent = "Chưa có";
+            }
+
+            // Sudoku games completed
+            const sudokuWins = localStorage.getItem("games_played_sudoku") || 0;
+            document.getElementById("stat-sudoku").textContent = `${sudokuWins} ván`;
+        }
+
+        // Inline Math Game implementation
+        const mathArea = document.getElementById("math-game-area");
+        const btnStartMath = document.getElementById("btn-start-math");
+
+        let mathScore = 0;
+        let mathTimer = null;
+        let mathTimeRemaining = 8;
+        let mathCorrectAnswer = 0;
+
+        btnStartMath.addEventListener("click", startMathGame);
+
+        function startMathGame() {
+            mathScore = 0;
+            mathTimeRemaining = 8;
+            generateMathQuestion();
+            startMathTimer();
+        }
+
+        function generateMathQuestion() {
+            const ops = ["+", "-", "*"];
+            const op = ops[Math.floor(Math.random() * ops.length)];
+            let n1 = 0, n2 = 0;
+
+            if (op === "+") {
+                n1 = Math.floor(Math.random() * 89) + 10;
+                n2 = Math.floor(Math.random() * 89) + 10;
+                mathCorrectAnswer = n1 + n2;
+            } else if (op === "-") {
+                n1 = Math.floor(Math.random() * 89) + 10;
+                n2 = Math.floor(Math.random() * (n1 - 5)) + 5;
+                mathCorrectAnswer = n1 - n2;
+            } else if (op === "*") {
+                n1 = Math.floor(Math.random() * 11) + 2;
+                n2 = Math.floor(Math.random() * 11) + 2;
+                mathCorrectAnswer = n1 * n2;
+            }
+
+            const answers = [mathCorrectAnswer];
+            while (answers.length < 4) {
+                const wrong = mathCorrectAnswer + (Math.floor(Math.random() * 19) - 9);
+                if (wrong !== mathCorrectAnswer && wrong > 0 && !answers.includes(wrong)) {
+                    answers.push(wrong);
+                }
+            }
+            answers.sort(() => Math.random() - 0.5);
+
+            mathArea.innerHTML = `
+                <div class="game-play-header">
+                    <span>Điểm: <strong style="color:var(--primary-light);">${mathScore}</strong></span>
+                    <span id="math-timer-text" style="color:var(--success);">${mathTimeRemaining}s</span>
+                </div>
+                <div class="game-question">${n1} ${op === "*" ? "×" : op} ${n2} = ?</div>
+                <div class="game-options-grid">
+                    ${answers.map(ans => `<button class="game-option-btn" data-val="${ans}">${ans}</button>`).join("")}
+                </div>
+            `;
+
+            mathArea.querySelectorAll(".game-option-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const chosen = parseInt(btn.dataset.val);
+                    if (chosen === mathCorrectAnswer) {
+                        mathScore++;
+                        mathTimeRemaining = Math.max(5, 8 - Math.floor(mathScore / 5));
+                        clearInterval(mathTimer);
+                        startMathTimer();
+                        generateMathQuestion();
+                    } else {
+                        endMathGame();
+                    }
+                });
+            });
+        }
+
+        function startMathTimer() {
+            mathTimer = setInterval(() => {
+                mathTimeRemaining--;
+                const txt = document.getElementById("math-timer-text");
+                if (txt) txt.textContent = `${mathTimeRemaining}s`;
+
+                if (mathTimeRemaining <= 0) {
+                    endMathGame();
+                }
+            }, 1000);
+        }
+
+        function endMathGame() {
+            clearInterval(mathTimer);
+            
+            // Save to localStorage
+            const best = parseInt(localStorage.getItem("high_score_quick_math") || 0);
+            let newRec = false;
+            if (mathScore > best) {
+                localStorage.setItem("high_score_quick_math", mathScore);
+                newRec = true;
+            }
+            const count = parseInt(localStorage.getItem("games_played_quick_math") || 0);
+            localStorage.setItem("games_played_quick_math", count + 1);
+
+            // Update page stats
+            loadStats();
+
+            mathArea.innerHTML = `
+                <i data-lucide="trophy" style="width:48px; height:48px; color:var(--primary-light); margin-bottom:12px;"></i>
+                <h4 style="font-weight:800; font-size:1.1rem; margin-bottom:4px;">Kết thúc lượt chơi!</h4>
+                <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:12px;">Bạn ghi được: <strong>${mathScore} điểm</strong></p>
+                ${newRec ? `<p style="color:var(--success); font-weight:700; font-size:0.8rem; margin-top:-8px; margin-bottom:12px;">🎉 KỶ LỤC MỚI!</p>` : ""}
+                <button class="btn-primary" id="btn-restart-math" style="padding:8px 16px; font-size:0.85rem;">Chơi lại</button>
+            `;
+            lucide.createIcons();
+
+            document.getElementById("btn-restart-math").addEventListener("click", startMathGame);
+        }
+
+        // Init
+        loadStats();
+        lucide.createIcons();
+    </script>
+</body>
+</html>

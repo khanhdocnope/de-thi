@@ -74,7 +74,14 @@ $replacements = @(
     @{ Local = "href='game-sudoku.html'"; Prod = "href='game-sudoku'" },
     @{ Local = '"game-sudoku.html"'; Prod = '"game-sudoku"' },
     @{ Local = "'game-sudoku.html'"; Prod = "'game-sudoku'" },
-    @{ Local = '`game-sudoku.html`'; Prod = '`game-sudoku`' }
+    @{ Local = '`game-sudoku.html`'; Prod = '`game-sudoku`' },
+
+    # game-hub.html <=> game-hub
+    @{ Local = 'href="game-hub.html"'; Prod = 'href="game-hub"' },
+    @{ Local = "href='game-hub.html'"; Prod = "href='game-hub'" },
+    @{ Local = '"game-hub.html"'; Prod = '"game-hub"' },
+    @{ Local = "'game-hub.html'"; Prod = "'game-hub'" },
+    @{ Local = '`game-hub.html`'; Prod = '`game-hub`' }
 )
 
 # Tự động phát hiện chế độ hiện tại dựa trên index.html với đường dẫn tương đối

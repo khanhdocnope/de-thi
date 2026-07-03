@@ -374,6 +374,15 @@
             clearInterval(timerInterval);
             document.getElementById("final-moves").textContent = moves;
             document.getElementById("final-time").textContent = `${timeElapsed}s`;
+            
+            // Save to localStorage
+            const bestTime = parseFloat(localStorage.getItem("best_time_memory_game") || 999999);
+            if (timeElapsed < bestTime) {
+                localStorage.setItem("best_time_memory_game", timeElapsed);
+            }
+            const played = parseInt(localStorage.getItem("games_played_memory_game") || 0);
+            localStorage.setItem("games_played_memory_game", played + 1);
+
             setTimeout(() => {
                 winOverlay.classList.add("show");
             }, 500);

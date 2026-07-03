@@ -375,11 +375,25 @@ function initMathGame() {
   
   function gameOver() {
     clearInterval(timer);
+    
+    // Save to localStorage
+    const currentHighScore = parseInt(localStorage.getItem("high_score_quick_math") || 0);
+    let isNewRecord = false;
+    if (score > currentHighScore) {
+      localStorage.setItem("high_score_quick_math", score);
+      isNewRecord = true;
+    }
+    
+    // Track total games played
+    const totalMathGames = parseInt(localStorage.getItem("games_played_quick_math") || 0);
+    localStorage.setItem("games_played_quick_math", totalMathGames + 1);
+
     gameArea.innerHTML = `
       <div class="game-over-view">
         <i data-lucide="trophy" class="game-over-icon"></i>
         <h4 class="game-over-title">Kết thúc thử thách!</h4>
         <p class="game-over-desc">Điểm số của bạn đạt được là: <strong>${score}</strong></p>
+        ${isNewRecord ? `<p style="color: var(--success); font-weight: 700; font-size: 0.85rem; margin-top: -8px; margin-bottom: 12px;">🎉 KỶ LỤC MỚI!</p>` : ""}
         <button class="btn-start-game" id="btn-restart-game">Chơi lại</button>
       </div>
     `;
