@@ -1,0 +1,14 @@
+{
+  "name": "eduprep-thptqg-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nền tảng ôn thi đại học và tốt nghiệp THPTQG",
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm run install:server && npm run install:client",
+    "seed": "node server/seed.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev"
+  }
+}
